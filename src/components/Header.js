@@ -7,11 +7,11 @@ const Header = () => {
         <div>
             <AppBar position="static">
                 <Toolbar>
-                    <Typography variant="h4" align="center">Movie App</Typography>
+                    <Typography variant="h4" align="center">Movie Review App</Typography>
 
-                    <Link color="secondary" to="/">Search Movie</Link>
-                    <Link color="secondary" to="/displayall">Display All</Link>                     
-                     <Link color="secondary" to="/add">Add a Movie</Link>
+                    <Link color="secondary" style={{padding:5,fontSize:25,margin:15,color:'Black'}} to="/">Search Movie</Link>
+                    <Link color="secondary" style={{padding:5,fontSize:25,margin:15,color:'Black'}} to="/displayall">Display Movies</Link>                     
+                     <Link color="secondary" style={{padding:5,fontSize:25,margin:15,color:'Black'}} to="/add">Add a Review</Link>
            
                 </Toolbar>
 

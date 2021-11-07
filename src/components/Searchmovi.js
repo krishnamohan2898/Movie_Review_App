@@ -38,7 +38,7 @@ const Searchmovi = () => {
     
     return (
         <div>
-
+            <br></br>
         <Typography variant="h5" color="primary" style={{fontFamily:"sans-serif"}} align="center" >SEARCH FOR A MOVIE</Typography>
 
             <TextField 
@@ -64,11 +64,11 @@ const Searchmovi = () => {
                 <TableHead>
                     <TableRow >
                         
-                        <TableCell >movie name</TableCell>
-                        <TableCell>actor</TableCell>                     
+                        <TableCell >Movie Name</TableCell>
+                        <TableCell>Actor</TableCell>                     
                         
-                        <TableCell>director</TableCell>
-                        <TableCell>review</TableCell>
+                        <TableCell>Director</TableCell>
+                        <TableCell>Review</TableCell>
 
                        
 

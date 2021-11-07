@@ -21,12 +21,13 @@ const Addmovi = () => {
     
     return (
         <div>
+            <br></br>
         <Typography variant="h4" color="primary" style={{fontFamily:"sans-serif",padding:10}} >INSERT A MOVIE</Typography>
 
-            <TextField value={value.moviename} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="movie" name="moviename" />
-            <TextField value={value.actor} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="actor" name="actor"/>           
-            <TextField value={value.director} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="director" name="director"/>           
-            <TextField value={value.review} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="language" name="language"/>
+            <TextField value={value.moviename} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="Movie" name="moviename" />
+            <TextField value={value.actor} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="Actor" name="actor"/>           
+            <TextField value={value.director} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="Director" name="director"/>           
+            <TextField value={value.review} onChange={setvalue} fullWidth variant="outlined" margin="normal" label="Review" name="review"/>
             
             
              <Button onClick={readvalues} fullWidth variant="contained" color="primary">Submit</Button>

@@ -26,7 +26,8 @@ const Display = () => {
     
     return (
         <div>
-            <Typography variant="h5" color="primary" style={{fontFamily:"sans-serif"}}align="center">DISPLAY ALL MOVIES</Typography>
+            <br></br>
+            <Typography variant="h5" color="primary" style={{fontFamily:"sans-serif"}}align="center">DISPLAY MOVIES</Typography>
             <Typography><br></br></Typography>
             <Button onClick={display} fullWidth variant="contained" color="primary">Display All</Button>
             
@@ -36,10 +37,10 @@ const Display = () => {
                 <TableHead>
                     <TableRow >
                         
-                        <TableCell >movie name</TableCell>
-                        <TableCell>actor</TableCell>                     
-                        <TableCell>director</TableCell>
-                        <TableCell>review</TableCell>
+                        <TableCell >Movie Name</TableCell>
+                        <TableCell>Actor</TableCell>                     
+                        <TableCell>Director</TableCell>
+                        <TableCell>Review</TableCell>
                     </TableRow>
                 </TableHead>
 
