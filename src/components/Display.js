@@ -8,7 +8,7 @@ const Display = () => {
 
     const display=()=>{
         
-        axios.get("http://localhost:8080/displayall").then(
+        axios.get("http://3.143.175.100:5001/view").then(
             (response)=>{
                 console.log(response.data)
 
@@ -38,12 +38,8 @@ const Display = () => {
                         
                         <TableCell >movie name</TableCell>
                         <TableCell>actor</TableCell>                     
-                        <TableCell>actress</TableCell>
                         <TableCell>director</TableCell>
-                        <TableCell>Release year</TableCell>
-                        <TableCell>camera</TableCell>                      
-                        <TableCell>producer</TableCell>
-                        <TableCell>language</TableCell>
+                        <TableCell>review</TableCell>
                     </TableRow>
                 </TableHead>
 
@@ -53,12 +49,9 @@ const Display = () => {
                             
                         <TableCell>{value.moviename}</TableCell>                     
                         <TableCell>{value.actor}</TableCell>
-                        <TableCell>{value.actress}</TableCell>
-                        <TableCell>{value.director}</TableCell>
-                        <TableCell>{value.releaseyear}</TableCell>       
-                        <TableCell>{value.camera}</TableCell>              
-                        <TableCell>{value.producer}</TableCell>
-                        <TableCell>{value.language}</TableCell>
+                        <TableCell>{value.director}</TableCell>                 
+                        <TableCell>{value.review}</TableCell>
+                   
                         
                             
                         </TableRow>

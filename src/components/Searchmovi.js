@@ -10,7 +10,7 @@ const Searchmovi = () => {
     const readdata=()=>{
         console.log(value)
 
-        axios.post("http://localhost:8080/search",value).then(
+        axios.post("http://3.143.175.100:5001/search",value).then(
         (response)=>{
             console.log(response.data)
 
@@ -21,7 +21,18 @@ const Searchmovi = () => {
 }    )
         
     }
-
+    const deleteoperation=(id)=>{
+        console.log(id)
+        let data = {_id:id}
+        axios.post("http://3.143.175.100:5001/delete",data).then(
+            (response)=>{
+                console.log(response.data)
+                alert(response.data.status)
+                readdata()
+            }
+            
+        )
+    }
    
 
     
@@ -55,12 +66,13 @@ const Searchmovi = () => {
                         
                         <TableCell >movie name</TableCell>
                         <TableCell>actor</TableCell>                     
-                        <TableCell>actress</TableCell>
+                        
                         <TableCell>director</TableCell>
-                        <TableCell>Release year</TableCell>
-                        <TableCell>camera</TableCell>                      
-                        <TableCell>producer</TableCell>
-                        <TableCell>language</TableCell>
+                        <TableCell>review</TableCell>
+
+                       
+
+                        
                     </TableRow>
                 </TableHead>
 
@@ -70,12 +82,12 @@ const Searchmovi = () => {
                             
                         <TableCell>{value.moviename}</TableCell>                     
                         <TableCell>{value.actor}</TableCell>
-                        <TableCell>{value.actress}</TableCell>
+                        
                         <TableCell>{value.director}</TableCell>
-                        <TableCell>{value.releaseyear}</TableCell>       
-                        <TableCell>{value.camera}</TableCell>              
-                        <TableCell>{value.producer}</TableCell>
-                        <TableCell>{value.language}</TableCell>
+                       
+                        <TableCell>{value.review}</TableCell>
+                        <TableCell><Button color="primary" variant="contained" onClick={()=>{deleteoperation(value._id)}}>delete</Button></TableCell>
+
                             
                             
                         </TableRow>
